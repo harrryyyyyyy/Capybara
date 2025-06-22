@@ -152,25 +152,3 @@ body {
     opacity: 1;
   }
 }
-
-@media (max-width: 768px) {
-  .cake {
-    transform: scale(0.85);
-  }
-
-  .cake-text-wrapper {
-    gap: 6px;
-  }
-
-  .text h1 {
-    font-size: 20px;
-  }
-
-  .text p {
-    font-size: 16px;
-  }
-
-  .candles {
-    gap: 10px;
-  }
-}

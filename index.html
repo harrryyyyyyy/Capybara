@@ -1,112 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Ananya Birthday Cake</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Section toggle */
-    #cakePage {
-      display: none;
+    body {
+      background-color: #E1F7EB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
-    /* Make images responsive */
-    img {
-      max-width: 100%;
+    a img {
+      width: 200px;
       height: auto;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      font-size: 18px;
     }
 
     .caption {
-      font-size: 16px;
-      margin-top: 8px;
-      text-align: center;
-    }
-
-    /* Make the whole link clickable and mobile friendly */
-    #goToCake {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      color: black;
-      cursor: pointer;
-      padding: 20px;
-    }
-
-    @media (max-width: 768px) {
-      .wrapper > div {
-        flex-direction: column !important;
-        align-items: center;
-      }
-
-      .wrapper img {
-        margin: 20px 0 !important;
-        width: 80% !important;
-      }
-
-      .cake-text-wrapper {
-        transform: scale(0.9);
-      }
-
-      .text h1 {
-        font-size: 20px;
-      }
-
-      .text p {
-        font-size: 16px;
-      }
-
-      .candles {
-        gap: 10px;
-      }
+      margin-top: 10px;
     }
   </style>
 </head>
+
 <body>
-  <!-- Home Page -->
-  <div id="homePage">
-    <a id="goToCake">
-      <img src="image.jpg" alt="Go to Next Page" />
-      <div class="caption">Click anywhere for a surprise</div>
-      <div class="caption">Click on capy</div>
-    </a>
-  </div>
 
-  <!-- Cake Page -->
-  <div id="cakePage" class="wrapper">
-    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
-      <img src="1.png" alt="Left Image" style="width: 300px; margin: 20px;" />
+  <!-- Image as a clickable link -->
+  <a href="cake.html  ">
+    <img src="image.jpg" alt="Go to Next Page">
+    <br>
+    <div class="caption">click anywhere for a suprise</div>
+    <div class="caption">click on capy</div>
+  </a>
 
-      <div class="cake-text-wrapper">
-        <div class="cake">
-          <div class="candles">
-            <div class="candle"><div class="flame"></div></div>
-            <div class="candle"><div class="flame"></div></div>
-          </div>
-          <div class="icing"></div>
-          <div class="layer layer1"></div>
-          <div class="layer layer2"></div>
-          <div class="layer layer3"></div>
-        </div>
-        <div class="text">
-          <h1>Happy Birthday!</h1>
-          <p>Ananya</p>
-        </div>
-      </div>
-
-      <img src="2.png" alt="Right Image" style="width: 300px; margin: 20px;" />
-    </div>
-  </div>
 
   <script src="music.js"></script>
-  <script>
-    // Switch from home page to cake page on click
-    document.getElementById("goToCake").addEventListener("click", (e) => {
-      e.preventDefault();
-      document.getElementById("homePage").style.display = "none";
-      document.getElementById("cakePage").style.display = "block";
-    });
-  </script>
+
 </body>
+
 </html>
